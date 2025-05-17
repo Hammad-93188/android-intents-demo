@@ -38,7 +38,12 @@ class SecondActivity : AppCompatActivity() {
     // Attach listeners
     private fun setupListeners() {
         toastButton.setOnClickListener {
-            showToast("Hello from Activity 2")
+            val input = userInputField.text.toString().trim()
+            if (input.isNotEmpty()) {
+                showToast("Welcome, $input!")
+            } else {
+                showToast("Hello from Activity 2")
+            }
         }
 
         userInputField.setOnEditorActionListener { view, actionId, _ ->

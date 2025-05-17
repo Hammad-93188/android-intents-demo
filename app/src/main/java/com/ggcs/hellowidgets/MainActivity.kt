@@ -38,7 +38,12 @@ class MainActivity : AppCompatActivity() {
     // Attach event listeners
     private fun setupListeners() {
         helloButton.setOnClickListener {
-            showToast("Hello from Activity 1")
+            val name = nameInputField.text.toString().trim()
+            if (name.isNotEmpty()) {
+                showToast("Hello, $name!")
+            } else {
+                showToast("Hello from Activity 1")
+            }
         }
 
         nameInputField.setOnEditorActionListener { view, actionId, _ ->
