@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">HelloWidgets</string>
+    <string name="app_name">Intents Demo</string>
+    <string name="go_to_second_activity">Go to Second Activity</string>
+    <string name="open_web_page">Open Web Page</string>
+    <string name="share_text">Share Text</string>
+    <string name="enter_text_hint">Enter some text</string>
+    <string name="send_result">Send Result</string>
+    <string name="received_data">Received data: %s</string>
+    <string name="result_received">Result received: %s</string>
+    <string name="default_web_url">https://www.example.com</string>
+    <string name="default_share_text">Check out this amazing app!</string>
+    <string name="result_activity_title">Result Activity</string>
+    <string name="enter_result_hint">Enter result to send back</string>
+    <string name="submit_result">Submit Result</string>
 </resources>

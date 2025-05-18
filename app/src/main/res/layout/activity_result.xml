@@ -5,26 +5,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".SecondActivity">
+    tools:context=".ResultActivity">
 
-    <TextView
-        android:id="@+id/tvReceivedData"
+    <EditText
+        android:id="@+id/etResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/received_data"
-        android:textSize="18sp" />
+        android:hint="@string/enter_result_hint" />
 
     <Button
-        android:id="@+id/btnSendResult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/send_result" />
-
-    <TextView
-        android:id="@+id/tvResult"
+        android:id="@+id/btnSubmitResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:textSize="18sp" />
+        android:text="@string/submit_result" />
 </LinearLayout>
